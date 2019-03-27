@@ -1,0 +1,39 @@
+package chap02;
+import java.util.Scanner;
+import java.util.Random;
+
+public class ArrayRandom {
+
+	static int maxOf(int[] a) {
+		int max = a[0];
+		for(int i =0;i<a.length;i++) {
+			if(a[i]>max)
+				max = a[i];
+		}
+		return max;
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Random rand = new Random();
+		Scanner stdIn = new Scanner(System.in);
+		
+		System.out.println("배열에서의 최댓값을 구합니다.");
+		System.out.println("요소의 개수 : ");
+		int num = stdIn.nextInt();
+		
+		int[] arr = new int[num];
+		
+		for(int i =0;i<num;i++)
+		{
+			//System.out.println("arr[" + i + "] : ");
+			//arr[i] = stdIn.nextInt();
+			
+			arr[i] = 100 + rand.nextInt(90);
+			System.out.println("arr[" + i + "] : " + arr[i]);
+		}
+		
+		System.out.println("최댓값 : " + maxOf(arr));
+	}
+
+}
