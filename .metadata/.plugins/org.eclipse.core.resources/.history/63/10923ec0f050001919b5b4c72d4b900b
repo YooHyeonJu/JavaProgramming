@@ -1,0 +1,18 @@
+package chap02;
+import java.util.Scanner;
+
+public class CardConvRev {
+	
+	static int cardConvR(int x, int r,char[] d)
+		int digits = 0;
+		String dchar = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+		
+		do {
+			// charAt(n) : 0부터 시작하여 문자열의 n번째에 있는 문자를 반환함.
+			d[digits++] = dchar.charAt(x%r);
+			x/=r;
+		}while(x!=0);
+		
+		return digits;
+	}
+}

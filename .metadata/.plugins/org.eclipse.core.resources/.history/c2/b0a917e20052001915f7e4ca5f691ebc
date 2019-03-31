@@ -1,0 +1,12 @@
+package chap02;
+import java.util.Scanner;
+
+public class PhysicalExamination {
+
+	static final int VMAX = 21;
+	
+	static class PhyscData{
+		
+	}
+	
+}

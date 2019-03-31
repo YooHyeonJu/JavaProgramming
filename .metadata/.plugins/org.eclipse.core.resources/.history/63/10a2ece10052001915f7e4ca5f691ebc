@@ -1,0 +1,11 @@
+package chap10;
+
+public class BinTree {
+import java.util.Comparator;
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
